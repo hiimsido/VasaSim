@@ -6,7 +6,7 @@ public class VasaFiveZCB {
 
     private static int Success = 0;
     private static int Failure = 0;
-    private static final int attempts = 10000000;
+    private static final int attempts = 1000000;
 
 
     //bow accuracy

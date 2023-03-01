@@ -1,6 +1,6 @@
 package org.example;
 
-public class ClawKillOdds {
+public class clawSpecial {
 
 
     private static int Success = 0;
@@ -10,12 +10,7 @@ public class ClawKillOdds {
 
     public boolean Odds(double acc)
     {
-        double a = Math.random();
-        boolean b = acc >= a;
-
-
-
-        return (b);
+        return (acc >= Math.random());
     }
 
     public static class VasaStats
@@ -26,12 +21,12 @@ public class ClawKillOdds {
 
         public static void DragonClaws(int Torva, int Inq) {
 
-            ClawKillOdds Claw = new ClawKillOdds();
+            clawSpecial Claw = new clawSpecial();
             int TotalClawDamage = 0;
+            int players = Torva + Inq;
 
 
-
-                for (int i = 0; i < 5; i++) {
+                for (int i = 0; i < players; i++) {
 
 
                     int max = 43;
@@ -77,8 +72,7 @@ public class ClawKillOdds {
                         }
 
                         else if ((j == 3) && Claw.Odds(acc)) {
-                            int TotalSpecDMG = (int) (Math.random() * (int) maxTwo ) + (int)(maxTwo / 4);
-                            TotalClawDamage = TotalSpecDMG;
+                            TotalClawDamage = (int) (Math.random() * (int) maxTwo ) + (int)(maxTwo / 4);
                             VasaCrystalHealth = VasaCrystalHealth - TotalClawDamage;
                             break;
 
