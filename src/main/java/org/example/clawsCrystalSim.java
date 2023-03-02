@@ -101,7 +101,7 @@ public class clawsCrystalSim {
                 }
 
                 if (Odds(acc)) {
-                    int ClawDamage = (int) (Math.random() * max + 1);
+                    int ClawDamage = (int) (Math.random() * (max + 1));
                     VasaCrystalHealth = VasaCrystalHealth - ClawDamage;
 
                     if (VasaCrystalHealth<=0) {
