@@ -46,26 +46,26 @@ public class clawsCrystalSim {
                 }
 
 
-                for (int j = 0; j < 4; j++) {
-                    if ((j == 0) && Odds(acc)) {
+                for (int j = 0; j < 1; j++) {
+                    if ((Odds(acc))) {
                         int TotalSpecDMG = (int) (Math.random() * (max * .5)) + (max / 2);
                         TotalClawDamage = (TotalSpecDMG + (TotalSpecDMG / 2) + (TotalSpecDMG / 4) + (TotalSpecDMG / 4));
                         VasaCrystalHealth = VasaCrystalHealth - TotalClawDamage;
                         break;
 
-                    } else if ((j == 1) && Odds(acc)) {
+                    } else if ((Odds(acc))) {
                         int TotalSpecDMG = (int) (Math.random() * (maxTwo * .5)) + (int) (maxTwo * (.375));
                         TotalClawDamage = ((TotalSpecDMG) + (TotalSpecDMG / 2) + (TotalSpecDMG / 2));
                         VasaCrystalHealth = VasaCrystalHealth - TotalClawDamage;
                         break;
 
-                    } else if ((j == 2) && Odds(acc)) {
+                    } else if ((Odds(acc))) {
                         int TotalSpecDMG = (int) (Math.random() * (maxTwo * .5)) + (int) (maxTwo * .25);
                         TotalClawDamage = (TotalSpecDMG * 2);
                         VasaCrystalHealth = VasaCrystalHealth - TotalClawDamage;
                         break;
 
-                    } else if ((j == 3) && Odds(acc)) {
+                    } else if ((Odds(acc))) {
                         TotalClawDamage = (int) (Math.random() * (int) maxTwo) + (int) (maxTwo / 4);
                         VasaCrystalHealth = VasaCrystalHealth - TotalClawDamage;
                         break;
